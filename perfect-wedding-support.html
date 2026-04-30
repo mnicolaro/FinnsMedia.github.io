@@ -1,41 +1,141 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfect Wedding Support</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        .header {
+            background: #111;
+            color: white;
+            padding: 32px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: clamp(32px, 6vw, 42px);
+        }
+
+        .header p {
+            margin-top: 10px;
+            font-size: clamp(15px, 3vw, 18px);
+        }
+
+        .content-card {
+            max-width: 800px;
+            width: calc(100% - 32px);
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .content-card h2 {
+            margin-top: 0;
+            font-size: clamp(24px, 5vw, 32px);
+        }
+
+        .content-card p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 18px;
+            background: #111;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .button:hover {
+            background: #333;
+        }
+
+        .secondary-button {
+            background: #777;
+        }
+
+        .secondary-button:hover {
+            background: #555;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        @media screen and (max-width: 600px) {
+            .header {
+                padding: 28px 16px;
+            }
+
+            .content-card {
+                width: calc(100% - 24px);
+                margin: 24px auto;
+                padding: 22px;
+            }
+
+            .button {
+                width: 100%;
+                margin-top: 8px;
+            }
+        }
+    </style>
 </head>
 
-<body style="font-family: Arial, sans-serif; margin: 0; background:#f5f5f5; color:#333;">
+<body>
 
-    <div style="background:#111; color:white; padding:30px 20px; text-align:center;">
+    <div class="header">
         <h1>FinnsMedia</h1>
         <p>iOS App Developer</p>
     </div>
 
-    <div style="max-width:800px; margin:40px auto; background:white; padding:30px; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+    <div class="content-card">
         <h2>Perfect Wedding Day Support</h2>
 
         <p>
-            Need help using Perfect Wedding Day? Download the support guide below for instructions on joining an event, creating an event, using photos, chat, admin tools, site settings, and troubleshooting.
+            Need help using Perfect Wedding Day? Download the support guide below for instructions on joining an event,
+            creating an event, using photos, chat, admin tools, site settings, and troubleshooting.
         </p>
 
-        <p style="margin-top:25px;">
-            <a href="perfect-wedding-support.pdf" download
-               style="display:inline-block; padding:12px 18px; background:#111; color:white; text-decoration:none; border-radius:6px;">
+        <p>
+            <a href="perfect-wedding-support.pdf" download class="button">
                 Download Support File
             </a>
         </p>
 
         <p>
-            For support, contact FinnsMedia at: 
+            For support, contact FinnsMedia at:
             <strong>your-email@example.com</strong>
         </p>
 
-        <p style="margin-top:30px;">
-            <a href="index.html" style="display:inline-block; padding:10px 16px; background:#777; color:white; text-decoration:none; border-radius:6px;">Back to Home</a>
+        <p>
+            <a href="index.html" class="button secondary-button">
+                Back to Home
+            </a>
         </p>
     </div>
 
-    <div style="text-align:center; padding:30px; font-size:14px; color:#777;">
+    <div class="footer">
         © 2026 FinnsMedia
     </div>
 
