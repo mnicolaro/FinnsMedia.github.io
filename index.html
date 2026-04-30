@@ -3,45 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfect Wedding Day Hold Harmless Agreement</title>
+    <title>FinnsMedia | iOS App Developer</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            color: #333;
+            background:
+                linear-gradient(
+                    to bottom,
+                    #7ec8f5 0%,
+                    #b9e6ff 32%,
+                    #ffffff 47%,
+                    #4fb3d8 55%,
+                    #1f89b6 68%,
+                    #d9bd82 100%
+                );
+        }
+
+        .header {
+            background-color: rgba(17,17,17,0.9);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: clamp(32px, 6vw, 48px);
+        }
+
+        .header p {
+            margin-top: 10px;
+            font-size: clamp(15px, 3vw, 18px);
+        }
+
+        .intro {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .intro p {
+            max-width: 650px;
+            margin: auto;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .apps-section {
+            padding: 30px 20px;
+            max-width: 950px;
+            margin: auto;
+        }
+
+        .apps-section h2 {
+            text-align: center;
+        }
+
+        .app-card {
+            background: rgba(255,255,255,0.92);
+            padding: 25px;
+            margin-top: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+        }
+
+        .app-card h3 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        .app-card p {
+            line-height: 1.6;
+        }
+
+        ul {
+            text-align: left;
+            max-width: 650px;
+            margin: 20px auto;
+            padding-left: 24px;
+            line-height: 1.7;
+        }
+
+        .button-row {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .button-row a {
+            display: inline-block;
+            min-width: 160px;
+            padding: 12px 18px;
+            background: #111;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .button-row a:hover {
+            background: #333;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        @media screen and (max-width: 600px) {
+            .header {
+                padding: 32px 16px;
+            }
+
+            .intro {
+                padding: 30px 16px;
+            }
+
+            .apps-section {
+                padding: 20px 14px;
+            }
+
+            .app-card {
+                padding: 20px;
+                border-radius: 10px;
+            }
+
+            .app-card h3 {
+                font-size: 21px;
+            }
+
+            .button-row {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .button-row a {
+                width: 100%;
+                min-width: 0;
+            }
+
+            ul {
+                padding-left: 20px;
+            }
+        }
+    </style>
 </head>
 
-<body style="font-family: Arial, sans-serif; margin: 0; color: #333; background:
-    linear-gradient(
-        to bottom,
-        #7ec8f5 0%,
-        #b9e6ff 32%,
-        #ffffff 47%,
-        #4fb3d8 55%,
-        #1f89b6 68%,
-        #d9bd82 100%
-    );">
+<body>
 
-    <!-- Header -->
-    <div style="background-color: rgba(17,17,17,0.9); color: white; padding: 40px 20px; text-align: center;">
-        <h1 style="margin: 0; font-size: 40px;">FinnsMedia</h1>
-        <p style="margin-top: 10px; font-size: 18px;">iOS App Developer • Building Clean, Useful Apps</p>
+    <div class="header">
+        <h1>FinnsMedia</h1>
+        <p>iOS App Developer • Building Clean, Useful Apps</p>
     </div>
 
-    <!-- Intro -->
-    <div style="text-align: center; padding: 40px 20px;">
+    <div class="intro">
         <h2>Welcome 👋</h2>
-        <p style="max-width: 600px; margin: auto; font-size: 16px;">
+        <p>
             FinnsMedia creates modern iOS applications focused on simplicity, usability, and real-world value.
         </p>
     </div>
 
-    <!-- Apps Section -->
-    <div style="padding: 40px 20px; max-width: 900px; margin: auto;">
+    <div class="apps-section">
 
-        <h2 style="text-align: center;">Our Apps</h2>
+        <h2>Our Apps</h2>
 
-        <!-- Wedding App -->
-        <div style="background: rgba(255,255,255,0.92); padding: 25px; margin-top: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <div class="app-card">
             <h3>💍 Perfect Wedding Day</h3>
             <p><strong>Your all-in-one wedding companion for a seamless, unforgettable celebration</strong></p>
 
-            <ul style="text-align: left; max-width: 600px; margin: auto;">
+            <ul>
                 <li>📅 Agenda, venues, and event planning tools</li>
                 <li>📸 Shared photo gallery for guests</li>
                 <li>💬 Live chat and guest interaction</li>
@@ -50,20 +191,17 @@
                 <li>🎨 Fully customizable themes and layouts</li>
             </ul>
 
-            <p style="margin-top: 15px;">
-                <strong>Guests join for free using a simple event code.</strong>
-            </p>
+            <p><strong>Guests join for free using a simple event code.</strong></p>
         </div>
 
-        <div style="margin-top: 20px; text-align: center;">
-            <a href="perfect-wedding-support.html" style="display:inline-block; width:150px; margin:6px; padding:10px 16px; background:#111; color:white; text-decoration:none; border-radius:6px;">Support</a>
-            <a href="perfect-wedding-privacy.html" style="display:inline-block; width:150px; margin:6px; padding:10px 16px; background:#111; color:white; text-decoration:none; border-radius:6px;">Privacy Policy</a>
-            <a href="perfect-wedding-agreement.html" style="display:inline-block; width:150px; margin:6px; padding:10px 16px; background:#111; color:white; text-decoration:none; border-radius:6px;">Agreement</a>
-             <a href="Perfect-Wedding-Terms.html" style="display:inline-block; width:150px; margin:6px; padding:10px 16px; background:#111; color:white; text-decoration:none; border-radius:6px;">Terms of Use</a>
+        <div class="button-row">
+            <a href="perfect-wedding-support.html">Support</a>
+            <a href="perfect-wedding-privacy.html">Privacy Policy</a>
+            <a href="perfect-wedding-agreement.html">Agreement</a>
+            <a href="Perfect-Wedding-Terms.html">Terms of Use</a>
         </div>
 
-        <!-- Photo Sheet App -->
-        <div style="background: rgba(255,255,255,0.92); padding: 25px; margin-top: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <div class="app-card">
             <h3>📄 Photo Sheet Pro</h3>
             <p><strong>Organize, annotate, and share photos in clean, professional layouts</strong></p>
 
@@ -72,7 +210,7 @@
                 for reports, documentation, or sharing.
             </p>
 
-            <ul style="text-align: left; max-width: 600px; margin: auto;">
+            <ul>
                 <li>🖼️ Select multiple photos and auto-arrange into pages</li>
                 <li>📐 Layout options: 1, 2, or 4 images per page</li>
                 <li>✏️ Add captions to each image with bulk caption support</li>
@@ -81,22 +219,21 @@
                 <li>📊 Optional metadata addendum for detailed reporting</li>
             </ul>
 
-            <p style="margin-top: 15px;">
+            <p>
                 Designed for simplicity, speed, and professional output.
             </p>
         </div>
 
-        <div style="margin-top: 20px; text-align: center;">
-            <a href="photosheet-support.html" style="display:inline-block; width:150px; margin:6px; padding:10px 16px; background:#111; color:white; text-decoration:none; border-radius:6px;">Support</a>
-            <a href="photosheet-privacy.html" style="display:inline-block; width:150px; margin:6px; padding:10px 16px; background:#111; color:white; text-decoration:none; border-radius:6px;">Privacy Policy</a>
-            <a href="photosheet-agreement.html" style="display:inline-block; width:150px; margin:6px; padding:10px 16px; background:#111; color:white; text-decoration:none; border-radius:6px;">Agreement</a>
-             <a href="photosheet-terms.html" style="display:inline-block; width:150px; margin:6px; padding:10px 16px; background:#111; color:white; text-decoration:none; border-radius:6px;">Terms of Use</a>
+        <div class="button-row">
+            <a href="photosheet-support.html">Support</a>
+            <a href="photosheet-privacy.html">Privacy Policy</a>
+            <a href="photosheet-agreement.html">Agreement</a>
+            <a href="photosheet-terms.html">Terms of Use</a>
         </div>
 
     </div>
 
-    <!-- Footer -->
-    <div style="text-align: center; padding: 30px; font-size: 14px; color: #333;">
+    <div class="footer">
         © 2026 FinnsMedia • Built with passion for iOS
     </div>
 
